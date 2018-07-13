@@ -1,4 +1,4 @@
-​		# RTD电阻实验记录
+# 		  RTD电阻实验记录  
 
 ## 一、 实验器材
 
@@ -49,27 +49,25 @@ NI ELVISII+，ELVISBOX，RTD热电阻实验模块一个，PT100热电阻一根�
 
 4. 关闭平台电源，插上RTD热电阻实验模块，开启平台电源，此时可看到模块左上角绿色的电源指示灯亮。
 
-   ![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml\wpsAEB5.tmp.jpg)
+   
 
 
 
- 
+
 
 【**软件准备**】
 
 5. 打开nextpad，点击右上角的“配置”图标，在配置界面中选择“加载”；
 
-   ![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml\wpsAEC6.tmp.jpg)
-
-![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml\wpsAEE6.tmp.jpg) 
+   
 
 
 
 6. 在文件保存路径下，找到ELVISbox_Product Documentation_V1.0文件夹中的“nextmodule”文件夹，打开“nextsense”文件夹，再选择“RTD热电阻实验.nex”文件，并点击确定，等待系统自动加载完成；
 
-![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml\wpsAEE7.tmp.jpg)
 
-![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml\wpsAEE8.tmp.jpg)
+
+
 
 
 
@@ -77,7 +75,7 @@ NI ELVISII+，ELVISBOX，RTD热电阻实验模块一个，PT100热电阻一根�
 
 8. 运行RTD热电阻实验应用程序：在nextpad主界面中选择RTD热电阻实验图标，双击进入实验。
 
-   ​                   ![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml\wpsAEE9.tmp.jpg)
+   
 
    
 
@@ -99,21 +97,19 @@ NI ELVISII+，ELVISBOX，RTD热电阻实验模块一个，PT100热电阻一根�
 
 **Step1**：用万用表对实验模块上的200Ω备选电阻进行测量，测量后在“备选电阻校准”一栏中，选择测量电阻后将实际测量值写入Ri，并点击更改按钮。
 
-![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml\wpsAEFA.tmp.jpg)
+
 
 *Tip*：只有将用万用表实际测得的备选电阻阻值写入并确定更改后，在后续实验中所有需要用到Ri电阻的地方才会自动应用该值，减小实验误差。
 
-|      |                                                              |
-| ---- | ------------------------------------------------------------ |
-|      | ![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml\wpsAEFB.tmp.jpg) |
-
 **Step2**:用杜邦线将200Ω备选电阻连接到恒流源电路中Ri位置。将RTD热电阻连接到实验模块上的绿色螺丝拧线端子上，并拧紧。如图所示。
+
+
 
 **Step3**:将万用表红黑表笔分别放置在实验模块恒流源法区域的VCC端和GND端，测量VCC和GND之间的电压，并将其填入电压测量部分。
 
 *Tip*：此处也需手动测量并填写，同样会影响后续实验中软件恒流源/分压法自动测量选项卡中的计算结果。
 
-![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml\wpsAEFC.tmp.jpg) 
+
 
 **Step4**：【伏安特性的手动测量】保持RTD热电阻工作温度不变，更换Ri电阻值，使用万用表手动测量Vt，通过计算获得在不同电流情况下的RTD热电阻的阻值。通常，在同一温度下，RTD热电阻的阻值基本不会随着电压或者电流的更改而改变。
 
@@ -151,7 +147,7 @@ i=VRI/Ri=(VCC-Vt)/Ri, Rt=Vt/i
 
 **Step3**：点击恒流源界面右上角运行按钮，软件界面将通过测量到的Vt值，计算出电流、电阻和温度值。观察温度为当前温度，用手捏住RTD热电阻，观察曲线，有温度变化过程，最终曲线稳定后，观察温度接近体温温度，停止运行程序。
 
-![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml\wpsAF0F.tmp.jpg)
+
 
 
 
@@ -161,15 +157,13 @@ i=VRI/Ri=(VCC-Vt)/Ri, Rt=Vt/i
 
 
 
-![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml\wpsAF10.tmp.jpg)
-
 **Step2**：在自动测量选项卡中选中分压模式，将电阻选择为1K。如图所示。
 
-![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml\wpsAF11.tmp.jpg) 
+ 
 
 **Step3**：将万用表红黑表笔分别放置在实验模块分压法区域的VCC端及GND端，测量VCC和GND之间的电压，并将其填入电压测量部分。
 
-![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml\wpsAF12.tmp.jpg) 
+ 
 
 **Step4**：点击分压法界面的运行按钮，软件界面将通过测量到的Vt值，计算出电流、电阻和温度值。观察温度为当前温度，用手捏住RTD热电阻，观察曲线，有温度变化过程，最终曲线稳定后，观察温度接近体温温度，停止运行程序。
 
