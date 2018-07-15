@@ -27,11 +27,51 @@ NI ELVISII+，ELVISBOX，RTD热电阻实验模块一个，PT100热电阻一根�
 * 参数 A=3.92847×10-3/℃， B=-6×10 -7/℃， C=-4.22×10-12/℃。
 * 测温范围 测温范围 ：-190 ℃-630℃
 
- 
+## 二． 实验原理
+
+### （一）传感器介绍
+
+RTD热电阻利用金属铂这一感温材料，将测量温度转化为**测量电阻**。
+
+铂丝的电阻值与温度间的关系可以近似表示如下：
+
+在-190~0℃范围内![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsD3AB.tmp.png)
+
+在0~630.755℃范围内![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsD3BC.tmp.png)
+
+式中![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsD3BD.tmp.png)![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wps910.tmp.png)分别是温度为t℃和t0℃时的电阻式，A，B，C是常数。
+
+本实验采用PT100和PT1000为测试对象，当外界温度为0℃时，阻值分别为100Ω、1000Ω。
+
+它们的阻值跟温度的变化成正比。A，B，C分别为![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsD3DE.tmp.png)，![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsD3DF.tmp.png)，![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsD3F0.tmp.png)。[^1]
+
+[^1]: 此步骤中的 A 、 B 参数会影响到实际测量时的结果，本实验提供的 PT100 和 PT1000热电阻 A=3.92847*10-3 ， B=-6*10-7 ，因此在结束本选项卡的内容前，请移动滑块将 A ，B 数值分别修改为 3.92847*10-3 、 -6*10-7 或直接点击 ![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wps9F55.tmp.jpg)按钮。 
+
+### （二）恒流源法
+
+如图，Rt 代表 RTD 热电阻，Vt 代表 RTD 热电阻两端电压。
+
+![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsC255.tmp.jpg) 
+
+由于**“虚断”**，Rt电流与Ri电流大小相等
+
+由于**“虚短”**，反向输入端电压与同相输入端电压相等，故供电电流为 i=Vcc/Ri，
+
+Vcc 为固定值，Vt 值由万用表测得（手动测量）或通过数据采集卡采集（自动测量），其数值由电流以及 RTD 热电阻阻值共同决定。
+
+通过计算Rt=Vt/i=(Vt/Vcc)Ri得温度
+
+### （三）分压法
+
+![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsC275.tmp.jpg)
+
+分压电阻 Ri 和 Rt 串联。当 Rt 改变时，Ri 两端电压 VRi 以及 Rt 两端电压 Vt 都改变。电流值为 i=VRi/Ri=（Vcc-Vt）/Ri，再通过计算Rt=Vt/i 计算温度值。
+
+实际测量中，Vt 值由万用表测得（手动测量）或通过数据采集卡采集（自动测量），其数值由电流以及 RTD 热电阻阻值共同决定。
 
  
 
-## 二、 实验步骤
+## 三、 实验步骤
 
 ### （一）实验准备
 
@@ -169,7 +209,7 @@ i=VRI/Ri=(VCC-Vt)/Ri, Rt=Vt/i
 
  
 
-## 三、实验数据记录及处理
+## 四、实验数据记录及处理
 
 1. **万用表测备选电阻阻值**
 
@@ -221,7 +261,7 @@ Vcc=2.601V
 
    
 
-## 四、实验中存在的问题及解答
+## 五、实验中存在的问题及解答
 
 1. 在使用Pt1000和恒流源法手动测量的过程中，将200Ω、300Ω和500Ω的电阻作为Ri时，测得的Vt值是理论值的2倍，Rt阻值与理论值误差较大，导致测不准。
 
