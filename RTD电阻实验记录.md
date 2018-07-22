@@ -43,7 +43,7 @@ RTD热电阻利用金属铂这一感温材料，将测量温度转化为**测量
 
 本实验采用PT100和PT1000为测试对象，当外界温度为0℃时，阻值分别为100Ω、1000Ω。
 
-它们的阻值跟温度的变化成正比。A，B，C分别为![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsD3DE.tmp.png)，![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsD3DF.tmp.png)，![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsD3F0.tmp.png)。[^1]
+它们的**阻值跟温度的变化成正比**。A，B，C分别为![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsD3DE.tmp.png)，![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsD3DF.tmp.png)，![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsD3F0.tmp.png)。[^1]
 
 [^1]: 此步骤中的 A 、 B 参数会影响到实际测量时的结果，本实验提供的 PT100 和 PT1000热电阻 A=3.92847*10-3 ， B=-6*10-7 ，因此在结束本选项卡的内容前，请移动滑块将 A ，B 数值分别修改为 3.92847*10-3 、 -6*10-7 或直接点击 ![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wps9F55.tmp.jpg)按钮。 
 
@@ -267,6 +267,4 @@ Vcc=2.601V
 
 ​      解答：因为恒流源法中，Ri一定时，流经Ri的电流是一定的，当Rt太大时，
 
-2. 两种方法得到的0℃时的Rt值不等于1000或100Ω，在操作一切规范的前提下，原因可能是出厂时阻值便不是严格为1000或100Ω。
-
-​       或是这里的运算放大器不是运算放大器，所以简单地用“虚短”“虚短”的规则本身就会存在误差。
+2. 两种方法得到的0℃时的Rt值不等于1000或100Ω，在操作一切规范的前提下，原因可能是出厂时阻值便不是严格为1000或100Ω，或是实验中运算放大器不是理想运算放大器，所以简单地用“虚短”“虚短”的规则本身就会存在误差。
