@@ -25,9 +25,12 @@ NI ELVISII+，ELVISBOX，RTD热电阻实验模块一个，PT100热电阻一根�
 **PT100、PT1000热电阻Ÿ** 
 
 * 参数 A=3.92847×10-3/℃， B=-6×10 -7/℃， C=-4.22×10-12/℃。
+
 * 测温范围 测温范围 ：-190 ℃-630℃
 
-## 二． 实验原理
+  
+
+## 二、 实验原理
 
 ### （一）传感器介绍
 
@@ -47,6 +50,8 @@ RTD热电阻利用金属铂这一感温材料，将测量温度转化为**测量
 
 [^1]: 此步骤中的 A 、 B 参数会影响到实际测量时的结果，本实验提供的 PT100 和 PT1000热电阻 A=3.92847*10-3 ， B=-6*10-7 ，因此在结束本选项卡的内容前，请移动滑块将 A ，B 数值分别修改为 3.92847*10-3 、 -6*10-7 或直接点击 ![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wps9F55.tmp.jpg)按钮。 
 
+
+
 ### （二）恒流源法
 
 如图，Rt 代表 RTD 热电阻，Vt 代表 RTD 热电阻两端电压。
@@ -60,6 +65,8 @@ RTD热电阻利用金属铂这一感温材料，将测量温度转化为**测量
 Vcc 为固定值，Vt 值由万用表测得（手动测量）或通过数据采集卡采集（自动测量），其数值由电流以及 RTD 热电阻阻值共同决定。
 
 通过计算Rt=Vt/i=(Vt/Vcc)Ri得温度
+
+
 
 ### （三）分压法
 
@@ -75,7 +82,7 @@ Vcc 为固定值，Vt 值由万用表测得（手动测量）或通过数据采�
 
 ### （一）实验准备
 
-【**ELVISbox准备**】
+#### 【**ELVISbox准备**】
 
 1. 在桌上放置好NI ELVISII+，连接好电源线，再用USB线将其与电脑连接起来。（注意保证仪器上的两个开关均是关闭的）
 
@@ -85,37 +92,33 @@ Vcc 为固定值，Vt 值由万用表测得（手动测量）或通过数据采�
 
  
 
-【**模块准备**】
+#### 【**模块准备**】
 
 4. 关闭平台电源，插上RTD热电阻实验模块，开启平台电源，此时可看到模块左上角绿色的电源指示灯亮。
 
-   
+   ![3.1](https://github.com/HouRuizhe/Pictures-of-experiments-summaries/blob/master/P3.1.png)
 
 
 
-
-
-【**软件准备**】
+#### 【**软件准备**】
 
 5. 打开nextpad，点击右上角的“配置”图标，在配置界面中选择“加载”；
 
-   
+   ![3.2](https://github.com/HouRuizhe/Pictures-of-experiments-summaries/blob/master/P3.2.png)
 
-
+   ![3.3](https://github.com/HouRuizhe/Pictures-of-experiments-summaries/blob/master/P3.3.png)
 
 6. 在文件保存路径下，找到ELVISbox_Product Documentation_V1.0文件夹中的“nextmodule”文件夹，打开“nextsense”文件夹，再选择“RTD热电阻实验.nex”文件，并点击确定，等待系统自动加载完成；
 
+![3.4](https://github.com/HouRuizhe/Pictures-of-experiments-summaries/blob/master/P3.4.png)
 
-
-
-
-
+![3.5](https://github.com/HouRuizhe/Pictures-of-experiments-summaries/blob/master/P3.5.png)
 
 7. 加载完成后，点击窗口下方正中央的按钮即可返回主界面，在主界面的下方便有一行正方形的图标，可查看已安装的实验；
 
 8. 运行RTD热电阻实验应用程序：在nextpad主界面中选择RTD热电阻实验图标，双击进入实验。
 
-   
+   ![3.6](https://github.com/HouRuizhe/Pictures-of-experiments-summaries/blob/master/P3.6.png)
 
    
 
@@ -129,37 +132,39 @@ Vcc 为固定值，Vt 值由万用表测得（手动测量）或通过数据采�
 
 *Tip*：备选电阻存在一定的公差，因此为了增加后续测量的准确性，需要对实验模块上的备选电阻进行测量。
 
+
+
 #### 完成手动测量实验
 
-【**恒流源法测量**】
+#### 【**恒流源法测量**】
 
 软件切换到“仿真与测量”选项卡
 
 **Step1**：用万用表对实验模块上的200Ω备选电阻进行测量，测量后在“备选电阻校准”一栏中，选择测量电阻后将实际测量值写入Ri，并点击更改按钮。
 
-
+![3.7](https://github.com/HouRuizhe/Pictures-of-experiments-summaries/blob/master/P3.7.png)
 
 *Tip*：只有将用万用表实际测得的备选电阻阻值写入并确定更改后，在后续实验中所有需要用到Ri电阻的地方才会自动应用该值，减小实验误差。
 
-**Step2**:用杜邦线将200Ω备选电阻连接到恒流源电路中Ri位置。将RTD热电阻连接到实验模块上的绿色螺丝拧线端子上，并拧紧。如图所示。
+**Step2**：用杜邦线将200Ω备选电阻连接到恒流源电路中Ri位置。将RTD热电阻连接到实验模块上的绿色螺丝拧线端子上，并拧紧。如图所示。
 
+![3.8](https://github.com/HouRuizhe/Pictures-of-experiments-summaries/blob/master/P3.8.png)
 
-
-**Step3**:将万用表红黑表笔分别放置在实验模块恒流源法区域的VCC端和GND端，测量VCC和GND之间的电压，并将其填入电压测量部分。
+**Step3**：将万用表红黑表笔分别放置在实验模块恒流源法区域的VCC端和GND端，测量VCC和GND之间的电压，并将其填入电压测量部分。
 
 *Tip*：此处也需手动测量并填写，同样会影响后续实验中软件恒流源/分压法自动测量选项卡中的计算结果。
 
-
+![3.9](https://github.com/HouRuizhe/Pictures-of-experiments-summaries/blob/master/P3.9.png)
 
 **Step4**：【伏安特性的手动测量】保持RTD热电阻工作温度不变，更换Ri电阻值，使用万用表手动测量Vt，通过计算获得在不同电流情况下的RTD热电阻的阻值。通常，在同一温度下，RTD热电阻的阻值基本不会随着电压或者电流的更改而改变。
 
 （i=Vcc/Ri, Rt=Vc/i）
 
-![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml\wpsAEFE.tmp.jpg)
+（实验数据见后）
 
 **Step5**：【R-T特性的手动测量】保持Ri不变，改变RTD热电阻工作温度值，使用万用表测量Vt，计算RTD热电阻阻值Rt，并借助特性曲线图中的游标值估算对应温度。
 
- ![img](file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml\wpsAEFD.tmp.jpg)
+（实验数据见后）
 
 【**分压法测量**】
 
@@ -179,7 +184,7 @@ i=VRI/Ri=(VCC-Vt)/Ri, Rt=Vt/i
 
 软件切换到“自动测量”选项卡
 
-##### 【恒流源实验】
+#### 【恒流源实验】
 
 **Step1**：用杜邦线将 200Ω备选电阻连接到恒流源路中Ri位置。将 RTD 热电阻连接到实验模块上的绿色螺丝拧线端子。见图 6-1。
 
@@ -187,27 +192,29 @@ i=VRI/Ri=(VCC-Vt)/Ri, Rt=Vt/i
 
 **Step3**：点击恒流源界面右上角运行按钮，软件界面将通过测量到的Vt值，计算出电流、电阻和温度值。观察温度为当前温度，用手捏住RTD热电阻，观察曲线，有温度变化过程，最终曲线稳定后，观察温度接近体温温度，停止运行程序。
 
+![3.10](https://github.com/HouRuizhe/Pictures-of-experiments-summaries/blob/master/P3.10.png)
 
 
 
-
-##### 【分压法实验】
+#### 【分压法实验】
 
 **Step1**：用杜邦线将1K备选电阻连接到分压法电路中Ri位置。将RTD热电阻连接到实验模块上的绿色螺丝拧线端子。如图所示。
 
-
+![3.11](https://github.com/HouRuizhe/Pictures-of-experiments-summaries/blob/master/P3.11.png)
 
 **Step2**：在自动测量选项卡中选中分压模式，将电阻选择为1K。如图所示。
 
- 
+ ![3.12](https://github.com/HouRuizhe/Pictures-of-experiments-summaries/blob/master/P3.12.png)
 
 **Step3**：将万用表红黑表笔分别放置在实验模块分压法区域的VCC端及GND端，测量VCC和GND之间的电压，并将其填入电压测量部分。
 
- 
+![3.13](https://github.com/HouRuizhe/Pictures-of-experiments-summaries/blob/master/P3.13.png)
 
 **Step4**：点击分压法界面的运行按钮，软件界面将通过测量到的Vt值，计算出电流、电阻和温度值。观察温度为当前温度，用手捏住RTD热电阻，观察曲线，有温度变化过程，最终曲线稳定后，观察温度接近体温温度，停止运行程序。
 
- 
+
+
+
 
 ## 四、实验数据记录及处理
 
