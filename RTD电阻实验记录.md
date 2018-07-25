@@ -48,7 +48,9 @@ RTD热电阻利用金属铂这一感温材料，将测量温度转化为**测量
 
 它们的**阻值跟温度的变化成正比**。A，B，C分别为![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsD3DE.tmp.png)，![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsD3DF.tmp.png)，![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsD3F0.tmp.png)。[^1]
 
-[^1]: 此步骤中的 A 、 B 参数会影响到实际测量时的结果，本实验提供的 PT100 和 PT1000热电阻 A=3.92847*10-3 ， B=-6*10-7 ，因此在结束本选项卡的内容前，请移动滑块将 A ，B 数值分别修改为 3.92847*10-3 、 -6*10-7 或直接点击 ![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wps9F55.tmp.jpg)按钮。 
+[^1]: 此步骤中的 A 、 B 参数会影响到实际测量时的结果，本实验提供的 PT100 和 PT1000热电阻 A=3.92847*10-3 ， B=-6*10-7 ，因此在结束本选项卡的内容前，请移动滑块将 A ，B 数值分别修改为 3.92847*10-3 、 -6*10-7 或直接点击 default按钮。 
+
+
 
 
 
@@ -56,7 +58,7 @@ RTD热电阻利用金属铂这一感温材料，将测量温度转化为**测量
 
 如图，Rt 代表 RTD 热电阻，Vt 代表 RTD 热电阻两端电压。
 
-![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsC255.tmp.jpg) 
+![img](https://github.com/XiaoyuKang/pictures/blob/master/wpsC255.tmp.jpg?raw=true) 
 
 由于**“虚断”**，Rt电流与Ri电流大小相等
 
@@ -70,7 +72,7 @@ Vcc 为固定值，Vt 值由万用表测得（手动测量）或通过数据采�
 
 ### （三）分压法
 
-![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsC275.tmp.jpg)
+![img](https://github.com/XiaoyuKang/pictures/blob/master/wpsC275.tmp.jpg?raw=true)
 
 分压电阻 Ri 和 Rt 串联。当 Rt 改变时，Ri 两端电压 VRi 以及 Rt 两端电压 Vt 都改变。电流值为 i=VRi/Ri=（Vcc-Vt）/Ri，再通过计算Rt=Vt/i 计算温度值。
 
