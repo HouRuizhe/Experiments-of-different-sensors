@@ -38,17 +38,7 @@ RTD热电阻利用金属铂这一感温材料，将测量温度转化为**测量
 
 铂丝的电阻值与温度间的关系可以近似表示如下：
 
-在-190~0℃范围内![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsD3AB.tmp.png)
-
-在0~630.755℃范围内![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsD3BC.tmp.png)
-
-式中![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsD3BD.tmp.png)![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wps910.tmp.png)分别是温度为t℃和t0℃时的电阻式，A，B，C是常数。
-
-本实验采用PT100和PT1000为测试对象，当外界温度为0℃时，阻值分别为100Ω、1000Ω。
-
-它们的**阻值跟温度的变化成正比**。A，B，C分别为![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsD3DE.tmp.png)，![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsD3DF.tmp.png)，![img](file:///C:\Users\xiaoy\AppData\Local\Temp\ksohtml\wpsD3F0.tmp.png)。[^1]
-
-[^1]: 此步骤中的 A 、 B 参数会影响到实际测量时的结果，本实验提供的 PT100 和 PT1000热电阻 A=3.92847*10-3 ， B=-6*10-7 ，因此在结束本选项卡的内容前，请移动滑块将 A ，B 数值分别修改为 3.92847*10-3 、 -6*10-7 或直接点击 default按钮。 
+![](https://github.com/XiaoyuKang/pictures/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20181016220439.png)
 
 
 
@@ -58,9 +48,9 @@ RTD热电阻利用金属铂这一感温材料，将测量温度转化为**测量
 
 ![img](https://github.com/XiaoyuKang/pictures/blob/master/wpsC255.tmp.jpg?raw=true) 
 
-由于**“虚断”**，Rt电流与Ri电流大小相等
+由于**虚断**，Rt电流与Ri电流大小相等
 
-由于**“虚短”**，反向输入端电压与同相输入端电压相等，故供电电流为 i=Vcc/Ri，
+由于**虚短**，反向输入端电压与同相输入端电压相等，故供电电流为 i=Vcc/Ri，
 
 Vcc 为固定值，Vt 值由万用表测得（手动测量）或通过数据采集卡采集（自动测量），其数值由电流以及 RTD 热电阻阻值共同决定。
 
@@ -76,9 +66,17 @@ Vcc 为固定值，Vt 值由万用表测得（手动测量）或通过数据采�
 
 实际测量中，Vt 值由万用表测得（手动测量）或通过数据采集卡采集（自动测量），其数值由电流以及 RTD 热电阻阻值共同决定。
 
- 
+## 三、实验内容
 
-## 三、 实验步骤
+1.恒流源法手动测量伏安特性和R-T特性
+
+2.分压法手动测量伏安特性和R-T特性
+
+3.完成选项卡上的恒流源法自动测量和分压法自动测量
+
+
+
+## 四、 实验步骤
 
 ### （一）实验准备
 
@@ -216,7 +214,7 @@ i=VRI/Ri=(VCC-Vt)/Ri, Rt=Vt/i
 
 
 
-## 四、实验数据记录及处理
+## 五、实验数据记录及处理
 
 1. **万用表测备选电阻阻值**
 
@@ -268,10 +266,10 @@ Vcc=2.601V
 
    
 
-## 五、实验中存在的问题及解答
+## 六、实验中存在的问题及解答
 
 1. 在使用Pt1000和恒流源法手动测量的过程中，将200Ω、300Ω和500Ω的电阻作为Ri时，测得的Vt值是理论值的2倍，Rt阻值与理论值误差较大，导致测不准。
 
-​      解答：因为恒流源法中，Ri一定时，流经Ri的电流是一定的，当Rt太大时，
+​      解答：恒流源法中，运算放大器增益并不为无穷大，Rt明显大于Ri时，测得Rt数值偏小。
 
 2. 两种方法得到的0℃时的Rt值不等于1000或100Ω，在操作一切规范的前提下，原因可能是出厂时阻值便不是严格为1000或100Ω，或是实验中运算放大器不是理想运算放大器，所以简单地用“虚短”“虚短”的规则本身就会存在误差。
